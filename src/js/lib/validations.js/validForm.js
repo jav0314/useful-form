@@ -26,10 +26,7 @@ export function validForm(event) {
   }
 
   const passwordValidationMessage = validPassword(inputPass);
-  if (
-    passwordValidationMessage.includes("Easy Password") ||
-    passwordValidationMessage.includes("Really hard Password")
-  ) {
+  if (passwordValidationMessage.includes("Easy Password")) {
     event.preventDefault();
     showAlert("passwordAlert", passwordValidationMessage);
     isValid = false;
@@ -54,7 +51,7 @@ export function validForm(event) {
   }
 
   if (isValid) {
-    alert(messages[3]);
+    alert("Thanks!!!");
   }
 }
 function clearAlerts() {
