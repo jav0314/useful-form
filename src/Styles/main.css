@@ -134,11 +134,17 @@ button[type="submit"]:hover{
   width: 30px;
   height: auto;
   display: flex;
-  justify-content: flex-end;
-  margin-bottom: 10px;
+  justify-content: center;
+ 
 }
 
 a {
   display: inline-block; 
   text-decoration: none;
+}
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
