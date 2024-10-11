@@ -51,7 +51,8 @@ export function validForm(event) {
   }
 
   if (isValid) {
-    alert("Thanks!!!");
+    event.preventDefault();
+    alert("Thanks for using my program!!!");
   }
 }
 function clearAlerts() {
